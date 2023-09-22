@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Post Name"
-author: Your name
-description: Short yet informative description
-image: "/path/to/image" or "url_to_image"
+title:  "First Post"
+author: Evan Miller
+description: test post
+image: 
 --- 
 
 Hello World!
