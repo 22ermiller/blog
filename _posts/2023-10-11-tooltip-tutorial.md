@@ -52,7 +52,7 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R, to create our
 
     But what if we wanted to add some more information to out tooltip? There’s a chance our user doesn’t know that the data in the tooltip is the mpg. Let’s fix it by making our tooltip display “x mpg”, x being the mpg. In order to do this we need to go back to our data. The tooltip argument can take in any variable in the dataset we pass into ggplot(). So we can create a column in our dataset that has the string “x mpg” with a simple mutate statement. We then pass that new variable into the tooltip argument. 
     
-    ![Code Chunk 3]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_code2.png)
+    ![Code Chunk 3]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_code3.png)
     
     And that’s it! 
 
@@ -60,7 +60,7 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R, to create our
 
     Let’s make the graph a little more interesting by adding the number of cylinders as a color aesthetic and add it to the tooltip. Here I use “\n” in the paste0 function to add a newline onto my tooltip. 
 
-    ![Code Chunk 4]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_code2.png)    
+    ![Code Chunk 4]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_code4.png)    
 
     ![Graph 3]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph3.png)
 
