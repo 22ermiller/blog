@@ -49,6 +49,7 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R, to create our
     ![Graph 1]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph1.png)
 
 3. Iterate!
+
     But what if we wanted to add some more information to out tooltip? There’s a chance our user doesn’t know that the data in the tooltip is the mpg. Let’s fix it by making our tooltip display “x mpg”, x being the mpg. In order to do this we need to go back to our data. The tooltip argument can take in any variable in the dataset we pass into ggplot(). So we can create a column in our dataset that has the string “x mpg” with a simple mutate statement. We then pass that new variable into the tooltip argument. 
     
     ![Code Chunk 3]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_code2.png)
