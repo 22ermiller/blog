@@ -69,6 +69,7 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R to create our 
 
     girafe(ggobj = weight_mpg_p,
         width_svg = 15)
+    
     ```
 
     To make it interactive, we need to wrap the girafe() function around our ggplot object (I’ve specified the width just to make things look nicer in Rstudio).
@@ -87,13 +88,13 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R to create our 
     
     And that’s it! 
 
-    ![Graph 2]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph2.png)
+    <img src="{{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph2.png" alt="" style="width:1000px;"/>
 
     Let’s make the graph a little more interesting by adding the number of cylinders as a color aesthetic and add it to the tooltip. Here I use “\n” in the paste0 function to add a newline onto my tooltip. 
 
     ![Code Chunk 4]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_code4.png)    
 
-    ![Graph 3]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph3.png)
+    <img src="{{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph3.png" alt="" style="width:1000px;"/>
 
 
-With the concept of creating our own string from the dataset, we can create a custom tooltip that displays any of the existing data we would like. So, next time you are creating a graphic, think about what information you could display in your tooltip that would enhance the user experience.
+With the concept of creating our own string from the dataset, we can create a custom tooltip that displays any of the existing data we would like.
