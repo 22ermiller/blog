@@ -30,7 +30,7 @@ This graphic compares attendance among schools in different regions. The tooltip
 
 In this tutorial I’ll use the ggplot2 and ggiraph packages in R to create our interactive graphics. Ggiraph is a ggplot2 friendly package that creates interactive graphics out of ggplot2 objects. Obviously there are many more graphing packages and interactive wrappers you could use to create an interactive graphic, but we’ll just stick with gpplot and ggiraph for now (if you’re new to the interactive piece of creating graphics, or haven’t heard of ggiraph, visit [this link](https://www.ardata.fr/ggiraph-book/starting.html) for more information). Let’s go through the process of creating our graphic:
 
-1. Create your ggplot object
+### 1. Create your ggplot object
 
     ```
     library(tidyverse)
@@ -50,7 +50,7 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R to create our 
 
 	For this examples, lets look at the relationship between the weight of a car and miles per gallon using the mtcars dataset with a simple scatterplot. To prepare this plot to be interactive, we use geom_point_interactive instead of geom_point. Geom_point_interactive has a tooltip parameter where we can specify the value of our tooltip. I’ve specified it as mpg, the y-axis variable of the scatterplot.
 
-2. Make it interactive
+### 2. Make it interactive
 
     ```
     library(tidyverse)
@@ -69,7 +69,7 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R to create our 
 
     girafe(ggobj = weight_mpg_p,
         width_svg = 15)
-       ```
+    ```
 
     To make it interactive, we need to wrap the girafe() function around our ggplot object (I’ve specified the width just to make things look nicer in Rstudio).
     
@@ -77,11 +77,11 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R to create our 
 
     We can see from the graph below that we have a simple scatterplot with a tooltip that displays mpg on the hover of the mouse. 
 
-    <img src="{{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph1.png" alt="" style="width:500px;"/>
+    <img src="{{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph1.png" alt="" style="width:1000px;"/>
 
-3. Customize
+### 3. Customize
 
-    But what if we wanted to add some more information to out tooltip? There’s a chance our user doesn’t know that the data in the tooltip is the mpg. Let’s fix it by making our tooltip display “x mpg”, x being the mpg. In order to do this we need to go back to our data. The tooltip argument can take in any variable in the dataset we pass into ggplot(). So we can create a column in our dataset that has the string “x mpg” with a simple mutate statement. We then pass that new variable into the tooltip argument. 
+    But what if we wanted to add some more information to our tooltip? There’s a chance our user doesn’t know that the data in the tooltip is the mpg. Let’s fix it by making our tooltip display “x mpg”, x being the mpg. In order to do this we need to go back to our data. The tooltip argument can take in any variable in the dataset we pass into ggplot(). So we can create a column in our dataset that has the string “x mpg” with a simple mutate statement. We then pass that new variable into the tooltip argument. 
     
     ![Code Chunk 3]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_code3.png)
     
