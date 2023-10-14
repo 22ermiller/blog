@@ -79,15 +79,40 @@ We can see from the graph below that we have a simple scatterplot with a tooltip
 
 But what if we wanted to add some more information to our tooltip? There’s a chance our user doesn’t know that the data in the tooltip is the mpg. Let’s fix it by making our tooltip display “x mpg”, x being the mpg. In order to do this we need to go back to our data. The tooltip argument can take in any variable in the dataset we pass into ggplot(). So we can create a column in our dataset that has the string “x mpg” with a simple mutate statement. We then pass that new variable into the tooltip argument. 
     
-![Code Chunk 3]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_code3.png)
-    
+    mtcars <- mtcars %>%
+    mutate(mpg_tooltip = paste0(mpg, " mpg"))
+
+
+    # create graphic
+    weight_mpg_p <- ggplot(data = mtcars) +
+    geom_point_interactive(mapping = aes(x = wt, y = mpg, tooltip = mpg_tooltip)) +
+    labs(x = "Weight",
+        y = "MPG",
+        title = "Weight vs. MPG")
+
+    girafe(ggobj = weight_mpg_p,
+        width_svg = 15)   
+
 And that’s it! 
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph2.png" alt="" style="width:1000px;"/>
 
 Let’s make the graph a little more interesting by adding the number of cylinders as a color aesthetic and add it to the tooltip. Here I use “\n” in the paste0 function to add a newline onto my tooltip. 
 
-![Code Chunk 4]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_code4.png)    
+    mtcars <- mtcars %>%
+    mutate(cyl = as.factor(cyl)) %>% # cylinders as a factor
+    mutate(mpg_tooltip = paste0("Cylinders: ",cyl, "\n",mpg, " mpg"))
+
+    # create graphic
+    weight_mpg_p <- ggplot(data = mtcars) +
+    geom_point_interactive(mapping = aes(x = wt, y = mpg, color = cyl, tooltip = mpg_tooltip)) +
+    labs(x = "Weight",
+        y = "MPG",
+        title = "Weight vs. MPG",
+        color = "Cyllinders")
+
+    girafe(ggobj = weight_mpg_p,
+        width_svg = 15) 
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph3.png" alt="" style="width:1000px;"/>
 
