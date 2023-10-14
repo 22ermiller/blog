@@ -3,7 +3,7 @@ layout: post
 title:  "How to Enhance Your Data Viz with Custom Tooltips"
 author: Evan Miller
 description: A short tutorial about how to add custom tooltips to interactive graphics in R.
-image: /assets/images/blog-image.jpg
+image: /assets/images/toolbox.png
 ---
 
 ## Introduction
