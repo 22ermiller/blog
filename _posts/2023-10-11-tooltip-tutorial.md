@@ -32,12 +32,20 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R to create our 
 
 1. Create your ggplot object
 
-        ```
-    {
-    "firstName": "John",
-    "lastName": "Smith",
-    "age": 25
-    }
+    ```
+    library(tidyverse)
+    library(ggiraph)
+
+
+    # load in data
+    mtcars <- datasets::mtcars
+
+    # create graphic
+    weight_mpg_p <- ggplot(data = mtcars) +
+    geom_point_interactive(mapping = aes(x = wt, y = mpg, tooltip = mpg)) +
+    labs(x = "Weight",
+        y = "MPG",
+        title = "Weight vs. MPG")
     ```
 
     ![Code Chunk 1]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_code1.png)
