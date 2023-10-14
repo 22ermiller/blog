@@ -73,7 +73,7 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R to create our 
 
     We can see from the graph below that we have a simple scatterplot with a tooltip that displays mpg on the hover of the mouse. 
 
-    <img src="{{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph1.png" alt="" style="width:1000px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph1.png" alt="" style="width:1000px;"/>
 
 ### 3. Customize
 
@@ -83,13 +83,13 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R to create our 
     
     And that’s it! 
 
-    <img src="{{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph2.png" alt="" style="width:1000px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph2.png" alt="" style="width:1000px;"/>
 
     Let’s make the graph a little more interesting by adding the number of cylinders as a color aesthetic and add it to the tooltip. Here I use “\n” in the paste0 function to add a newline onto my tooltip. 
 
     ![Code Chunk 4]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_code4.png)    
 
-    <img src="{{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph3.png" alt="" style="width:1000px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/tooltip_graph3.png" alt="" style="width:1000px;"/>
 
 
 With the concept of creating our own string from the dataset, we can create a custom tooltip that displays any of the existing data we would like.
