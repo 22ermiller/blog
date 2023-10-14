@@ -45,8 +45,7 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R to create our 
     geom_point_interactive(mapping = aes(x = wt, y = mpg, tooltip = mpg)) +
     labs(x = "Weight",
         y = "MPG",
-        title = "Weight vs. MPG")
-    ```
+        title = "Weight vs. MPG")```
 
 	For this examples, lets look at the relationship between the weight of a car and miles per gallon using the mtcars dataset with a simple scatterplot. To prepare this plot to be interactive, we use geom_point_interactive instead of geom_point. Geom_point_interactive has a tooltip parameter where we can specify the value of our tooltip. I’ve specified it as mpg, the y-axis variable of the scatterplot.
 
@@ -68,9 +67,7 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R to create our 
         title = "Weight vs. MPG")
 
     girafe(ggobj = weight_mpg_p,
-        width_svg = 15)
-    
-    ```
+        width_svg = 15)```
 
     To make it interactive, we need to wrap the girafe() function around our ggplot object (I’ve specified the width just to make things look nicer in Rstudio).
     
