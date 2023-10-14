@@ -95,3 +95,6 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R to create our 
 
 
 With the concept of creating our own string from the dataset, we can create a custom tooltip that displays any of the existing data we would like.
+
+## Conclusion
+In this tutorial we went through the process of implementing a custom tooltip onto a ggplot object using ggirpah. With this tool, you can keep clutter out of your graph but still give your viewer the data they need. So for your next data viz, keep things simple and try a custom tooltip. 
