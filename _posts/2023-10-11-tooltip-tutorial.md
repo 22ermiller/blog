@@ -32,7 +32,6 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R to create our 
 
 ### 1. Create your ggplot object
 
-    ```
     library(tidyverse)
     library(ggiraph)
 
@@ -46,7 +45,6 @@ In this tutorial I’ll use the ggplot2 and ggiraph packages in R to create our 
     labs(x = "Weight",
         y = "MPG",
         title = "Weight vs. MPG")
-    ```
 
 	For this examples, lets look at the relationship between the weight of a car and miles per gallon using the mtcars dataset with a simple scatterplot. To prepare this plot to be interactive, we use geom_point_interactive instead of geom_point. Geom_point_interactive has a tooltip parameter where we can specify the value of our tooltip. I’ve specified it as mpg, the y-axis variable of the scatterplot.
 
