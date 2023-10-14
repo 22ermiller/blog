@@ -15,13 +15,13 @@ A tooltip simply, is a pop-up that displays information when the user hovers ove
 
 Here is a simple example of a bar chart comparing sales across different locations of a business.
 
-![Example 1]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_ex2.png)
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/tooltip_ex2.png" alt="" style="width:1000px;"/>
 
  We can see generally, the differences between sales numbers. And if we want to understand the data a little more granularly, we have the simple display of the tooltip that shares the speficic sales number without putting it in front of our face the whole time.
 
 Here’s another example with a tooltip that displays a little more information. 
 
-![Example 2]({{site.url}}/{{site.baseurl}}/assets/images/tooltip_ex1.png)
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/tooltip_ex1.png" alt="" style="width:1000px;"/>
 
 This graphic compares attendance among schools in different regions. The tooltip displays not just the number of interest, but the school as well. You get the jist…
 
