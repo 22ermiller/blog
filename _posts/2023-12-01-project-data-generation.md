@@ -12,7 +12,7 @@ The AUDL is a professional ultimate frisbee league that started in 2010. This me
 
 ## Data Generation
 
-Data was obtained through the AUDLs official API located at https://www.backend.audlstats.com/api/v1 (Official documentation is found at https://www.docs.audlstats.com/). I first needed to obtain a list of players for every year of interest. For the purpose of this project I only go back to 2015. Below is a chunk of the code used to obtain the player list:
+Data was obtained through the AUDLs official API located at <a href="https://www.backend.audlstats.com/api/v1" target="_blank">https://www.backend.audlstats.com/api/v1</a> (Official documentation is found at <a href="https://www.docs.audlstats.com/" target="_blank">https://www.docs.audlstats.com/</a>). I first needed to obtain a list of players for every year of interest. For the purpose of this project I only go back to 2015. Below is a chunk of the code used to obtain the player list:
 
 ```
 base_url = "https://www.backend.audlstats.com/api/v1/"
@@ -94,4 +94,4 @@ Since I was using a free API, there weren't many ethical considerations to make 
 
 ## Conclusion
 
-From this blog post you can see the steps taken to obtain season by season player statistics from the AUDL API. It included using requests library in python and multiple API calls from different endpoints to get the cleaned data. To see the full script used for data generation or look at the data yourself, see my github repository at https://github.com/22ermiller/audl_stat_comp/ (Data generation file: data_generation.py, Data: player_season_stats.csv). 
+From this blog post you can see the steps taken to obtain season by season player statistics from the AUDL API. It included using requests library in python and multiple API calls from different endpoints to get the cleaned data. To see the full script used for data generation or look at the data yourself, see my github repository at <a href="https://github.com/22ermiller/audl_stat_comp/" target="_blank">https://github.com/22ermiller/audl_stat_comp/</a> (Data generation file: data_generation.py, Data: player_season_stats.csv). 
