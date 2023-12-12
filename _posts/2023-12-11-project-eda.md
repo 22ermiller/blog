@@ -23,7 +23,7 @@ Obviously there are many other questions to ask, but we will explore these in th
 
 The graph below plots the distributions of completion percentage year over year:
 
-`![Completion Percentage](/assets/images/audl_plots/completion_percentage.png)`
+`![Completion Percentage](assets/images/audl_plots/completion_percentage.png)`
 
 Although the trend doesn't seem to be massive, there does seem to be an upward trend in completition percentage, with maybe even a smaller spread of the data, which could suggest an increase in offensive efficiency as the years go on. 
 
