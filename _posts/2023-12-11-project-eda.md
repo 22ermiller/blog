@@ -2,7 +2,7 @@
 layout: post
 title:  "AUDL Exploratory Data Analysis"
 author: Evan Miller
-description: A quick explanation of the process taken to obtain AUDL data specific to year by year player statistics
+description: A short exploration of year by year changes in meaningful AUDL statistics.
 image: /assets/images/audl_plots/throwaway_comp.png
 ---
 
