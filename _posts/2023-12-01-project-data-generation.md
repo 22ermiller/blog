@@ -12,7 +12,13 @@ The AUDL is a professional ultimate frisbee league that started in 2010. This me
 
 ## Data Generation
 
-Data was obtained through the AUDLs official API located at <a href="https://www.backend.audlstats.com/api/v1" target="_blank">https://www.backend.audlstats.com/api/v1</a> (Official documentation is found at <a href="https://www.docs.audlstats.com/" target="_blank">https://www.docs.audlstats.com/</a>). I first needed to obtain a list of players for every year of interest. For the purpose of this project I only go back to 2015. Below is a chunk of the code used to obtain the player list:
+Data was obtained through the AUDLs official API located at <a href="https://www.backend.audlstats.com/api/v1" target="_blank">https://www.backend.audlstats.com/api/v1</a> (Official documentation is found at <a href="https://www.docs.audlstats.com/" target="_blank">https://www.docs.audlstats.com/</a>). I first needed to obtain a list of players for every year of interest. For the purpose of this project I only go back to 2015. The diagram below outlines the process I took to get the final dataframe:
+
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/Flowcharts.png" alt="" style="width:1000px;"/>
+
+As you can see it is a fairly simple process. I first obtain a list of players from the Players API call, and then pass that list into the seasonal player stats API call and then transform that data to get the final data frame.
+
+Below is a chunk of the code used to obtain the player list:
 
 ```
 base_url = "https://www.backend.audlstats.com/api/v1/"
