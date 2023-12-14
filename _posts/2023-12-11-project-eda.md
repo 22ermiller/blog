@@ -8,7 +8,7 @@ image: /assets/images/audl_logo.jpg
 
 ## Introduction
 
-The AUDL is a relatively young professional ultimate frisbee league that started in 2010. Because it seems like most sports develop a lot through their earliest years I wanted to explore if there were meaningful statistical differences between player performance across years of league play and if there are, what those differences are. In this post we will explore the data to try and find these differences. For more information on specifics of how the data is generated and thus, what conclusions we can make about it, see my previous post on AUDL Data generation. Keep in mind that although we may be able to spot trends in the data, this is just exploratory and no attempt to make a statistical model or provide inference is made.
+Hello. The AUDL is a relatively young professional ultimate frisbee league that started in 2010. Because it seems like most sports develop a lot through their earliest years I wanted to explore if there were meaningful statistical differences between player performance across years of league play and if there are, what those differences are. In this post we will explore the data to try and find these differences. For more information on specifics of how the data is generated and thus, what conclusions we can make about it, see my previous post on AUDL Data generation. Keep in mind that although we may be able to spot trends in the data, this is just exploratory and no attempt to make a statistical model or provide inference is made.
 
 ## Offensive Efficiency
 
@@ -40,7 +40,7 @@ In this plot we can also see a general trend towards increased offensive efficie
 
 The last plot exploring offensive efficiency compares season assist totals and season throwaway totals for each player based on year
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/audl_plots/throwaway_v_assists.png" alt=""/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/audl_plots/throwaway_v_assists.png" alt="" style="width:1000px;"/>
 
 
 For simplicity's sake I only include 2 years on this plot. The data is extremely dense (predictably so) near the origin, but as the assist numbers increase, it seems like in 2013, there are more throwaways compared to 2022. This could suggest more efficient offense in 2022 as well. It would make sense in general that players with higher assist totals have more turnovers just because they are high volume players. And interestingly, it seems like high volume players in 2022 are perhaps somewhat more efficient than high volume players in 2013. 
