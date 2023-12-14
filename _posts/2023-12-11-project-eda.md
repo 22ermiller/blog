@@ -3,7 +3,7 @@ layout: post
 title:  "AUDL Exploratory Data Analysis"
 author: Evan Miller
 description: A short exploration of year by year changes in meaningful AUDL statistics.
-image: /assets/images/audl_plots/audl_logo.jpg
+image: /assets/images/audl_logo.jpg
 ---
 
 ## Introduction
