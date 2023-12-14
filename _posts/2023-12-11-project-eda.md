@@ -8,7 +8,7 @@ image: /assets/images/audl_logo.jpg
 
 ## Introduction
 
-Hello. The AUDL is a relatively young professional ultimate frisbee league that started in 2010. Because it seems like most sports develop a lot through their earliest years I wanted to explore if there were meaningful statistical differences between player performance across years of league play and if there are, what those differences are. In this post we will explore the data to try and find these differences. For more information on specifics of how the data is generated and thus, what conclusions we can make about it, see my previous post on AUDL Data generation. Keep in mind that although we may be able to spot trends in the data, this is just exploratory and no attempt to make a statistical model or provide inference is made.
+The AUDL is a relatively young professional ultimate frisbee league that started in 2010. Because it seems like most sports develop a lot through their earliest years I wanted to explore if there were meaningful statistical differences between player performance across years of league play and if there are, what those differences are. In this post we will explore the data to try and find these differences. For more information on specifics of how the data is generated and thus, what conclusions we can make about it, see my previous post on AUDL Data generation. Keep in mind that although we may be able to spot trends in the data, this is just exploratory and no attempt to make a statistical model or provide inference is made.
 
 ## Offensive Efficiency
 
