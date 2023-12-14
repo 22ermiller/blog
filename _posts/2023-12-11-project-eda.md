@@ -92,3 +92,5 @@ Again it looks like there are a lot of stalls called around 2016 and then there 
 ## Conclusion
 
 It's hard to make definite conclusions from the simple EDA conducted, but it looks to me like the overall offensive efficiency has increased over the years. This is what I would suspect as players are getting better and better and there is a growing sentiment in the league that offensive efficiency is key to winning championships. I would suspect in future years for players to get better and better offensively. The other metrics we looked at provided some interesting results. The upword trend in callahan numbers can be easily explained by a rule change but other metric trends are harder to interpret. Deeper analysis will have to be made to explain what's going on there!
+
+**To interact with these visualizations yourself visit my "AUDL Yearly Metric Analysis" streamlit app <a href="https://audlstatcomp-2mfyxgxzbrqlfymbp75rss.streamlit.app/" target="_blank">here</a>. Also to see the code used in this blog post visit my GitHub repository <a href="https://github.com/22ermiller/audl_stat_comp" target="_blank">here</a>.
