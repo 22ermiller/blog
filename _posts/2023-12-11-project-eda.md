@@ -40,7 +40,7 @@ In this plot we can also see a general trend towards increased offensive efficie
 
 The last plot exploring offensive efficiency compares season assist totals and season throwaway totals for each player based on year
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/audl_plots/throwaway_v_assists.png" alt="" style="width:1000px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/audl_plots/throwaway_v_assists.png" alt="" style="height:1000px,width:1000px;"/>
 
 
 For simplicity's sake I only include 2 years on this plot. The data is extremely dense (predictably so) near the origin, but as the assist numbers increase, it seems like in 2013, there are more throwaways compared to 2022. This could suggest more efficient offense in 2022 as well. It would make sense in general that players with higher assist totals have more turnovers just because they are high volume players. And interestingly, it seems like high volume players in 2022 are perhaps somewhat more efficient than high volume players in 2013. 
@@ -52,6 +52,11 @@ Because I was limited to the data collected via the AUDL API I just decided afte
 2. Callahans
 3. Out of Bounds Pulls
 4. Stalls
+
+Some questions that an understanding of these metric trends can answer:
+1. How have the number of blocks changed over the years? A change in block number can suggest tighter defense. Is that whats going on here?
+2. Has pulling gotten better over the years?
+3. A decrease in the number of stalls would coinside with the observation of higher offensive efficiency over the years. Is this the case?
 
 ### Blocks
 
